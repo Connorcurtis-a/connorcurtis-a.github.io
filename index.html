@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connor Curtis | Sales Professional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        header h2 {
+            font-size: 1.5em;
+            font-weight: 300;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95em;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h3 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+        }
+
+        .summary {
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+        }
+
+        .job {
+            margin-bottom: 35px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 1.2em;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .company {
+            color: #3498db;
+            font-weight: 600;
+        }
+
+        .job-location {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .job ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .job li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background: #ecf0f1;
+            padding: 15px 20px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .references {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .reference-card {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 4px solid #3498db;
+        }
+
+        .reference-name {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .reference-title {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .reference-phone {
+            color: #3498db;
+            font-weight: 500;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header h2 {
+                font-size: 1.2em;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .job-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CONNOR CURTIS</h1>
+            <h2>Sales Professional</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>✉</span>
+                    <span>Connorcurtis344@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>(616)-699-3986</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Las Vegas, NV</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <section>
+                <h3>Professional Summary</h3>
+                <p class="summary">
+                    Top performing sales professional with 9+ years experience delivering outstanding customer service in the most competitive residential markets. Known for relentless prospecting, and confident closing abilities. Track record includes consistent quota attainment and leading high performance sales teams. Masters the art of turning conversations into contracts and building trust and rapport among customers. Consistently delivers results in high pressure, commission based environments and shows up with a winning mentality.
+                </p>
+            </section>
+
+            <section>
+                <h3>Professional Experience</h3>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title"><span class="company">Green Home Solutions</span> - Senior Solar Energy Consultant</div>
+                        </div>
+                        <div class="job-location">Grand Rapids, MI (2019-2025)</div>
+                    </div>
+                    <ul>
+                        <li>Conducted comprehensive in-home consultations for residential clients, designing custom systems with financial projections.</li>
+                        <li>Generated robust sales pipeline through door-to-door canvassing, referral networks, and inbound leads.</li>
+                        <li>Trained and mentored new sales representatives in consultative selling techniques, objection handling strategies, and presentation flow.</li>
+                        <li>Presented multiple financing options including loans, leases, and cash purchases to meet diverse budgets and payment preferences.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title"><span class="company">GR Roofing & Exteriors</span> - Residential Roofing Sales Consultant</div>
+                        </div>
+                        <div class="job-location">Grand Rapids, MI (2017-2019)</div>
+                    </div>
+                    <ul>
+                        <li>Performed detailed roof inspections, storm damage assessments, and insurance claim documentation.</li>
+                        <li>Consistently closed roofing, siding, and gutter projects.</li>
+                        <li>Pioneered neighborhood canvassing strategies after storms, generating high quality leads.</li>
+                        <li>Coordinated closely with production crews to ensure seamless scheduling, material procurement, and installation timelines.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title"><span class="company">Cutco / Vector Marketing</span> - Branch Manager / Sales Representative</div>
+                        </div>
+                        <div class="job-location">Grand Rapids, MI (2015-2017)</div>
+                    </div>
+                    <ul>
+                        <li>Achieved top performer status at statewide fairs, expos, and trade shows.</li>
+                        <li>Earned fast track promotion based on superior appointment conversion rates and customer satisfaction scores.</li>
+                        <li>Launched and managed seasonal district office, recruiting and training 25-30 sales representatives.</li>
+                        <li>Facilitated weekly training sessions, managed payroll operations, led sales meetings, and coordinated territory planning.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h3>Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">Consultative Selling</div>
+                    <div class="skill-item">Team Training & Management</div>
+                    <div class="skill-item">Lead Generation & Prospecting</div>
+                    <div class="skill-item">Self Motivated</div>
+                    <div class="skill-item">Pipeline Management</div>
+                    <div class="skill-item">Customer Relationship Building</div>
+                    <div class="skill-item">Industry Knowledge</div>
+                    <div class="skill-item">CRM & Sales Tools</div>
+                    <div class="skill-item">Contract & Negotiation</div>
+                </div>
+            </section>
+
+            <section>
+                <h3>References</h3>
+                <div class="references">
+                    <div class="reference-card">
+                        <div class="reference-name">Jake Doughtery</div>
+                        <div class="reference-title">Cutco District Manager</div>
+                        <div class="reference-phone">(614)-562-3074</div>
+                    </div>
+                    <div class="reference-card">
+                        <div class="reference-name">Dan Clifton</div>
+                        <div class="reference-title">GR Roofing Sales Manager</div>
+                        <div class="reference-phone">(616)-322-2553</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Connor Curtis. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
