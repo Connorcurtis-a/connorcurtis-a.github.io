@@ -282,55 +282,59 @@
             line-height: 1.8;
         }
 
-        /* Sales Experience Section */
+        /* Professional Ventures Section */
         #sales {
             background: #f8fafc;
         }
 
-        .job {
+        .venture-card {
             background: white;
-            padding: 40px;
+            padding: 50px;
+            margin-bottom: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-left: 6px solid #dc2626;
+            transition: all 0.3s;
+        }
+
+        .venture-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .venture-header {
             margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            border-top: 4px solid #1e3a8a;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e5e7eb;
         }
 
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .job-title {
-            font-size: 1.4em;
+        .venture-header h3 {
+            font-size: 2em;
             color: #1e3a8a;
             font-weight: 700;
+            margin-bottom: 10px;
         }
 
-        .company {
+        .venture-location {
             color: #dc2626;
-            font-weight: 700;
-        }
-
-        .job-location {
-            color: #666;
-            font-style: italic;
+            font-weight: 600;
             font-size: 1.1em;
+            letter-spacing: 0.5px;
         }
 
-        .job ul {
-            margin-left: 20px;
-            margin-top: 15px;
+        .venture-story {
+            font-size: 1.1em;
+            line-height: 2;
+            color: #374151;
         }
 
-        .job li {
-            margin-bottom: 12px;
-            color: #555;
-            line-height: 1.7;
+        .venture-story p {
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        .venture-story p:last-child {
+            margin-bottom: 0;
         }
 
         /* Skills Section */
@@ -447,7 +451,7 @@
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#poker">POKER JOURNEY</a></li>
             <li><a href="#bridge">SKILLS BRIDGE</a></li>
-            <li><a href="#sales">SALES CAREER</a></li>
+            <li><a href="#sales">VENTURES</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
@@ -467,9 +471,9 @@
             <p class="section-subtitle">A unique journey from zero to the top tables</p>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Connor Curtis isn't your typical sales professional. His path to excellence was forged in the high-stakes world of professional poker before transitioning to elite sales performance.</p>
-                    <p>What sets Connor apart is his proven ability to thrive under pressure, read people with precision, and execute strategy flawlessly when the stakes are highest. Whether at the poker table or in the boardroom, he delivers results.</p>
-                    <p>With 9+ years of combined experience in competitive environments, Connor brings a unique perspective on risk management, strategic thinking, and the mental fortitude required to consistently perform at the highest level.</p>
+                    <p>Connor Curtis, the man who can turn his dreams into reality. Gives his word and delivers. Turns his thoughts into action. His path to excellence was forged in the high-stakes world of professional poker before transitioning to elite sales performance.</p>
+                    <p>What sets Connor apart is his ability to under promise and over deliver, and execute strategy flawlessly when the stakes are highest. Whether at the poker table or in the boardroom, he delivers results.</p>
+                    <p>With 9+ years of combined experience in competitive environments, Connor brings aprecision, unique perspective on risk management, strategic thinking, and the mental fortitude required to consistently perform at the highest level.</p>
                 </div>
                 <div class="about-image">
                     <img src="https://github.com/Connorcurtis-a/connorcurtis-a.github.io/blob/main/headshot.jpg?raw=true" alt="Connor Curtis">
@@ -478,48 +482,71 @@
         </div>
     </section>
 
-   <section id="poker">
-    <div class="container">
-        <h2>The Poker Journey</h2>
-        <p class="section-subtitle">Running it up from $0.10/$0.20 to $500/$1000 at the Wynn</p>
-        
-        <div style="display: grid; grid-template-columns: 400px 1fr; gap: 50px; align-items: start; margin-bottom: 40px;">
-            <img src="https://github.com/Connorcurtis-a/connorcurtis-a.github.io/blob/main/poker%20pic.jpg?raw=true" alt="Connor at poker table" style="width: 100%; border-radius: 10px; box-shadow: 0 10px 40px rgba(220, 38, 38, 0.3);">
-            <div>
-                <div class="poker-story">
-                    <p>The definition of <span class="poker-highlight">running it up</span>. From zero.</p>
-                    
-                    <p>It started with $0.10/$0.20 games online. Small town Michigan casinos playing $1/$2, where competing at Bellagio's $5/$10 tables seemed like an impossible dream. But Connor didn't just dream—he executed.</p>
-                    
-                    <p>Through countless hours of grinding online, maintaining strict bankroll management, and staying disciplined through brutal downswings, Connor climbed the ranks. From micro-stakes to small stakes. From small stakes to mid-stakes. Each level conquered through skill, patience, and relentless improvement.</p>
-                    
-                    <p>By 2021, Connor had turned professional—consistently profitable and ready for the big leagues. The move to Las Vegas in late 2023 was the final piece. Soon after, he found himself at the <span class="poker-highlight">$10/$20 No-Limit Hold'em tables at the Wynn</span>, competing against some of the world's best players.</p>
-                    
-                    <p>Every day at noon sharp, the game would start. Battling elite players. Waiting for high-stakes whales to join. Managing six-figure swings with ice-cold composure. This was the dream realized—playing <span class="poker-highlight">$500/$500/$1000 at the Salon in the Wynn</span>, the highest public stakes game in Las Vegas.</p>
+    <section id="poker">
+        <div class="container">
+            <h2>The Poker Journey</h2>
+            <p class="section-subtitle">Running it up from $0.10/$0.20 to $500/$1000 at the Wynn</p>
+            <div class="poker-story">
+                <p>The definition of <span class="poker-highlight">running it up</span>. From zero.</p>
+                
+                <p>It started with $0.10/$0.20 games online. Small town Michigan casinos playing $1/$2, where competing at Bellagio's $5/$10 tables seemed like an impossible dream. </p>
+                
+                <p>Through countless hours of grinding online, maintaining strict bankroll management, and staying disciplined through brutal downswings, Connor climbed the ranks. From micro-stakes to small stakes. From small stakes to mid-stakes. Each level conquered through skill, patience, and relentless improvement.</p>
+                
+                <p>By 2021, Connor went pro; he was consistently profitable and ready for the big leagues. The move to Las Vegas in late 2023 was the final piece. Soon after, he found himself at the <span class="poker-highlight">$10/$20 No-Limit Hold'em tables at the Wynn</span>, competing against some of the world's best players.</p>
+                
+                <p>Every day at noon sharp, the game would start. Battling elite players. Welcoming whales waiting to get in on the action. Managing six-figure swings. This was the dream realized. Playing <span class="poker-highlight">$10/$20 at the Wynn</span>, the highest stakes public game in Las Vegas. And somehow, finding himself a seat in the $500/$500/$1,000 game in the Salon, an event that he couldn't even dream up.</p>
+            </div>
+
+            <div class="poker-stats">
+                <div class="stat-card">
+                    <div class="stat-number">$0.10</div>
+                    <div class="stat-label">Starting Stakes (2020)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">$500/$1k</div>
+                    <div class="stat-label">Peak Stakes at Wynn</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5 Years</div>
+                    <div class="stat-label">Professional Career</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">World Class</div>
+                    <div class="stat-label">Competition Level</div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="poker-stats">
-            <div class="stat-card">
-                <div class="stat-number">$0.10/$0.20</div>
-                <div class="stat-label">Starting Stakes (2020)</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">$500/$1k</div>
-                <div class="stat-label">Peak Stakes at Wynn</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">5 Years</div>
-                <div class="stat-label">Professional Career</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">World Class</div>
-                <div class="stat-label">Competition Level</div>
+    <section id="current-projects" style="background: white; padding: 80px 20px;">
+        <div class="container">
+            <h2>Current Projects</h2>
+            <p class="section-subtitle">What's next on the horizon</p>
+            
+            <div style="max-width: 900px; margin: 0 auto; background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%); padding: 50px; border-radius: 15px; border-left: 6px solid #dc2626; box-shadow: 0 8px 30px rgba(30, 58, 138, 0.15);">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+                    <span style="font-size: 3em;">📖</span>
+                    <h3 style="font-size: 2em; color: #1e3a8a; font-weight: 700; margin: 0;">Writing a Book</h3>
+                </div>
+                <p style="font-size: 1.15em; line-height: 2; color: #374151; margin-bottom: 20px;">
+                    Connor is currently in the early stages of writing a book about his poker journey. From grinding $0.10/$0.20 online in small-town Michigan to competing in the highest-stakes public games in Las Vegas.
+                </p>
+                <p style="font-size: 1.15em; line-height: 2; color: #374151; margin-bottom: 20px;">
+                    The book will explore not just the technical aspects of climbing the poker ladder, but the mental fortitude required to manage brutal downswings, the discipline of bankroll management, and the psychological warfare of competing against the world's elite players.
+                </p>
+                <p style="font-size: 1.15em; line-height: 2; color: #374151;">
+                    It is a testament to what's possible when you combine relentless work ethic, strategic thinking, and the courage to chase seemingly impossible dreams.
+                </p>
+                <div style="margin-top: 30px; padding-top: 25px; border-top: 2px solid rgba(30, 58, 138, 0.2);">
+                    <p style="color: #1e3a8a; font-weight: 600; font-size: 1.05em; font-style: italic;">
+                        "From zero to the top, and risking it all. A journey worth telling."
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
     <section id="bridge">
         <div class="container">
             <h2>From Cards to Contracts</h2>
@@ -555,46 +582,59 @@
 
     <section id="sales">
         <div class="container">
-            <h2>Sales Career</h2>
-            <p class="section-subtitle">9+ years of elite performance in competitive residential markets</p>
+            <h2>Professional Ventures</h2>
+            <p class="section-subtitle">Turning expertise into impact across multiple industries</p>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title"><span class="company">Green Home Solutions</span> - Senior Solar Energy Consultant</div>
-                    <div class="job-location">Grand Rapids, MI (2019-2025)</div>
+            <div class="venture-card">
+                <div class="venture-header">
+                    <h3>Poker Coaching & Performance Consulting</h3>
+                    <span class="venture-location">Las Vegas, NV | 2021-Present</span>
                 </div>
-                <ul>
-                    <li>Conducted comprehensive in-home consultations for residential clients, designing custom solar systems with detailed financial projections</li>
-                    <li>Generated robust sales pipeline through door-to-door canvassing, referral networks, and inbound leads</li>
-                    <li>Trained and mentored new sales representatives in consultative selling techniques, objection handling strategies, and presentation flow</li>
-                    <li>Presented multiple financing options including loans, leases, and cash purchases to meet diverse budgets and payment preferences</li>
-                </ul>
+                <div class="venture-story">
+                    <p>After reaching the highest stakes in poker, Connor recognized an opportunity to turn his hard-earned expertise into something bigger. The path from micro-stakes to competing with the world's best wasn't just about cards—it was about mastery of strategy, psychology, and mental resilience. That knowledge had value beyond the tables.</p>
+                    
+                    <p>Connor launched a coaching business with a simple promise: measurable results. Not vague advice or theoretical concepts, but concrete improvements in win rate, decision-making, and profitability. His clients ranged from losing players looking to turn the corner to winning players ready to optimize and scale up stakes.</p>
+                    
+                    <p>The transformation stories speak for themselves. Losing players became consistent winners through systematic strategy overhauls and mental game coaching. Winning players saw their win rates climb as Connor identified subtle leaks in their game and rebuilt their decision-making frameworks from the ground up. Players looking to jump stakes learned not just the technical adjustments required, but the psychological preparation and bankroll management discipline that separates those who make it from those who don't.</p>
+                    
+                    <p>Connor's coaching covered every dimension of the game: live cash game dynamics, online optimization, theoretical foundations, mental resilience under pressure, tilt management, and the overall strategic mindset required to succeed long-term. Every engagement was results-driven, focused on quantifiable improvements that showed up in the bottom line. Because at the end of the day, poker—like business—is measured in outcomes.</p>
+                </div>
             </div>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title"><span class="company">GR Roofing & Exteriors</span> - Residential Roofing Sales Consultant</div>
-                    <div class="job-location">Grand Rapids, MI (2017-2019)</div>
+            <div class="venture-card">
+                <div class="venture-header">
+                    <h3>Music Industry Entrepreneurship</h3>
+                    <span class="venture-location">Western Michigan | 2018-2020</span>
                 </div>
-                <ul>
-                    <li>Performed detailed roof inspections, storm damage assessments, and insurance claim documentation</li>
-                    <li>Consistently closed high-value roofing, siding, and gutter projects in competitive residential market</li>
-                    <li>Pioneered neighborhood canvassing strategies after storms, generating consistent high-quality lead flow</li>
-                    <li>Coordinated closely with production crews to ensure seamless scheduling, material procurement, and installation timelines</li>
-                </ul>
+                <div class="venture-story">
+                    <p>Before poker consumed his focus, Connor was deeply embedded in the Western Michigan music scene. Not as a musician, but as a fan who couldn't stay on the sidelines. He attended shows constantly, built relationships with local artists and bands, and became a familiar face at venues across the region. The more time he spent in the community, the more he heard the same frustration from every artist: booking shows was nearly impossible, and when they did land gigs, the pay was often insulting.</p>
+                    
+                    <p>Connor saw an opportunity. Artists were talented but lacked the connections, negotiating leverage, and business infrastructure to get fair treatment from venues. He positioned himself as the solution—offering artist management services with one clear promise: he'd get them booked, and he'd get them paid fairly.</p>
+                    
+                    <p>The model worked. Connor leveraged his presence in the scene and relationships with venue owners to secure consistent bookings for his roster of artists. More importantly, he negotiated compensation that reflected their value, not just what venues were used to paying. His artists went from struggling to find opportunities to having reliable gig schedules and respectable income from their performances.</p>
+                    
+                    <p>One of Connor's proudest achievements was managing a full regional tour for an artist client. Most tour managers work with rough estimates and hope things balance out. Connor took a different approach. He mapped every expense with obsessive precision—travel costs, lodging, food, gear, contingencies—projecting the total tour budget down to the dollar. When the tour wrapped, actual expenses matched his projections almost exactly. It was the kind of meticulous planning and execution that would later define his approach to bankroll management in poker and strategic thinking in every venture since.</p>
+                    
+                    <p>Connor's time in the music industry was about solving real problems for people he genuinely cared about. He combined passion for the community with sharp business instincts, creating value for artists while building trust and a reputation throughout Western Michigan's music scene.</p>
+                </div>
             </div>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title"><span class="company">Cutco / Vector Marketing</span> - Branch Manager / Sales Representative</div>
-                    <div class="job-location">Grand Rapids, MI (2015-2017)</div>
+            <div class="venture-card">
+                <div class="venture-header">
+                    <h3>Early Career: Building the Foundation</h3>
+                    <span class="venture-location">Michigan | 2015-2020</span>
                 </div>
-                <ul>
-                    <li>Achieved top performer status at statewide fairs, expos, and trade shows</li>
-                    <li>Earned fast-track promotion to Branch Manager based on superior appointment conversion rates and customer satisfaction scores</li>
-                    <li>Launched and managed seasonal district office, recruiting and training 25-30 sales representatives</li>
-                    <li>Facilitated weekly training sessions, managed payroll operations, led sales meetings, and coordinated territory planning</li>
-                </ul>
+                <div class="venture-story">
+                    <p>Before launching his own ventures, Connor built his foundation in high-pressure sales environments where performance was everything and results were measured daily. From residential solar energy to roofing and direct sales, he learned how to prospect relentlessly, close confidently, and deliver results consistently.</p>
+                    
+                    <p>In solar energy sales, Connor conducted in-home consultations where he designed custom systems and presented detailed financial projections. It required technical knowledge, consultative selling skills, and the ability to simplify complex financing options for homeowners. He didn't just sell solar panels—he trained new representatives, teaching them the art of objection handling and presentation flow that turned conversations into contracts.</p>
+                    
+                    <p>His roofing sales experience sharpened his ability to generate leads in competitive markets. After storms, Connor pioneered neighborhood canvassing strategies that generated high-quality prospects while others were still waiting for phones to ring. He performed inspections, managed insurance claims, and coordinated with production crews to ensure projects ran smoothly from contract to completion.</p>
+                    
+                    <p>Connor's performance earned him rapid promotion to branch manager, where he recruited and trained teams of 25-30 sales representatives. He managed operations, led training sessions, ran sales meetings, and coordinated territory planning. At statewide trade shows and expos, he consistently achieved top performer status, proving that his success wasn't luck—it was skill, discipline, and an unshakeable competitive drive.</p>
+                    
+                    <p>These early years weren't just about hitting quotas. They were about learning how to perform under pressure, read people, manage pipelines, and build the mental toughness required to succeed in commission-based environments where every day is a test. The skills Connor developed in these roles became the foundation for everything that followed—from dominating poker tables to building businesses from scratch.</p>
+                </div>
             </div>
         </div>
     </section>
