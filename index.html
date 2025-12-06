@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connor Curtis | Sales Professional</title>
+    <title>Connor Curtis | Professional Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -15,306 +15,551 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f4f4f4;
+            scroll-behavior: smooth;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 20px 0;
         }
 
-        header {
-            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1e3a8a;
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+        }
+
+        nav a:hover {
+            color: #dc2626;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
             color: white;
-            padding: 60px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            padding: 0 20px;
+            position: relative;
+            overflow: hidden;
         }
 
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            font-weight: 300;
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="none"/><path d="M0 0L100 100M100 0L0 100" stroke="rgba(255,255,255,0.05)" stroke-width="2"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            font-weight: 700;
+            margin-bottom: 20px;
             letter-spacing: 2px;
         }
 
-        header h2 {
+        .hero .subtitle {
             font-size: 1.5em;
             font-weight: 300;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+
+        .hero .tagline {
+            font-size: 1.2em;
+            font-weight: 400;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #dc2626;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #b91c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 100px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 3em;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* About Section */
+        #about {
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1em;
+            line-height: 1.9;
+            color: #555;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+        }
+
+        .about-image {
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        /* Poker Journey Section */
+        #poker {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            color: white;
+        }
+
+        #poker h2 {
+            color: white;
+        }
+
+        #poker .section-subtitle {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .poker-story {
+            font-size: 1.15em;
+            line-height: 2;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .poker-story p {
+            margin-bottom: 25px;
+        }
+
+        .poker-highlight {
+            color: #dc2626;
+            font-weight: 600;
+        }
+
+        .poker-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid rgba(220, 38, 38, 0.3);
+            transition: all 0.3s;
+        }
+
+        .stat-card:hover {
+            border-color: #dc2626;
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #dc2626;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.1em;
             opacity: 0.9;
         }
 
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 20px;
+        /* Bridge Section */
+        #bridge {
+            background: white;
         }
 
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.95em;
+        .skills-bridge {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
         }
 
-        .content {
+        .bridge-card {
+            background: #f8fafc;
             padding: 40px;
+            border-radius: 10px;
+            border-left: 4px solid #1e3a8a;
+            transition: all 0.3s;
         }
 
-        section {
-            margin-bottom: 50px;
+        .bridge-card:hover {
+            border-left-color: #dc2626;
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
 
-        h3 {
-            color: #2c3e50;
-            font-size: 1.8em;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #3498db;
+        .bridge-card h3 {
+            color: #1e3a8a;
+            font-size: 1.5em;
+            margin-bottom: 15px;
         }
 
-        .summary {
-            font-size: 1.05em;
-            line-height: 1.8;
+        .bridge-card p {
             color: #555;
-            text-align: justify;
+            line-height: 1.8;
+        }
+
+        /* Sales Experience Section */
+        #sales {
+            background: #f8fafc;
         }
 
         .job {
-            margin-bottom: 35px;
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid #1e3a8a;
         }
 
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             flex-wrap: wrap;
+            gap: 15px;
         }
 
         .job-title {
-            font-size: 1.2em;
-            color: #2c3e50;
-            font-weight: 600;
+            font-size: 1.4em;
+            color: #1e3a8a;
+            font-weight: 700;
         }
 
         .company {
-            color: #3498db;
-            font-weight: 600;
+            color: #dc2626;
+            font-weight: 700;
         }
 
         .job-location {
-            color: #7f8c8d;
+            color: #666;
             font-style: italic;
+            font-size: 1.1em;
         }
 
         .job ul {
             margin-left: 20px;
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         .job li {
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             color: #555;
+            line-height: 1.7;
+        }
+
+        /* Skills Section */
+        #skills {
+            background: white;
         }
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
         }
 
         .skill-item {
-            background: #ecf0f1;
-            padding: 15px 20px;
-            border-radius: 5px;
-            border-left: 4px solid #3498db;
-            font-weight: 500;
-            color: #2c3e50;
-        }
-
-        .references {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .reference-card {
-            background: #ecf0f1;
-            padding: 20px;
-            border-radius: 8px;
-            border-top: 4px solid #3498db;
-        }
-
-        .reference-name {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
             font-weight: 600;
-            color: #2c3e50;
+            text-align: center;
             font-size: 1.1em;
-            margin-bottom: 5px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(30, 58, 138, 0.2);
         }
 
-        .reference-title {
-            color: #7f8c8d;
-            font-size: 0.9em;
-            margin-bottom: 10px;
+        .skill-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
         }
 
-        .reference-phone {
-            color: #3498db;
-            font-weight: 500;
+        /* Contact Section */
+        #contact {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            text-align: center;
+        }
+
+        #contact h2 {
+            color: white;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            font-size: 1.2em;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: #dc2626;
         }
 
         footer {
-            background: #2c3e50;
+            background: #111827;
             color: white;
             text-align: center;
             padding: 30px;
             font-size: 0.9em;
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
+            .hero h1 {
+                font-size: 2.5em;
             }
 
-            header h2 {
+            .hero .subtitle {
                 font-size: 1.2em;
             }
 
-            .contact-info {
-                flex-direction: column;
-                gap: 15px;
+            h2 {
+                font-size: 2em;
             }
 
-            .content {
-                padding: 20px;
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                gap: 20px;
+                padding: 0 20px;
             }
 
             .job-header {
                 flex-direction: column;
             }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="https://github.com/Connorcurtis-a/connorcurtis-a.github.io/blob/main/headshot.jpg?raw=true" alt="Connor Curtis" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px; border: 4px solid white;">
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#poker">POKER JOURNEY</a></li>
+            <li><a href="#bridge">SKILLS BRIDGE</a></li>
+            <li><a href="#sales">SALES CAREER</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
             <h1>CONNOR CURTIS</h1>
-            <h2>Sales Professional</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span>✉</span>
-                    <span>Connorcurtis344@gmail.com</span>
+            <div class="subtitle">Elite Performer | Strategic Thinker | Closer</div>
+            <div class="tagline">From competing at poker's highest stakes to mastering high-pressure sales. Built for performance where it matters most.</div>
+            <a href="#contact" class="cta-button">Let's Connect</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Connor</h2>
+            <p class="section-subtitle">A unique journey from zero to the top tables</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Connor Curtis isn't your typical sales professional. His path to excellence was forged in the high-stakes world of professional poker before transitioning to elite sales performance.</p>
+                    <p>What sets Connor apart is his proven ability to thrive under pressure, read people with precision, and execute strategy flawlessly when the stakes are highest. Whether at the poker table or in the boardroom, he delivers results.</p>
+                    <p>With 9+ years of combined experience in competitive environments, Connor brings a unique perspective on risk management, strategic thinking, and the mental fortitude required to consistently perform at the highest level.</p>
                 </div>
-                <div class="contact-item">
-                    <span>📱</span>
-                    <span>(616)-699-3986</span>
-                </div>
-                <div class="contact-item">
-                    <span>📍</span>
-                    <span>Las Vegas, NV</span>
+                <div class="about-image">
+                    <img src="https://github.com/Connorcurtis-a/connorcurtis-a.github.io/blob/main/headshot.jpg?raw=true" alt="Connor Curtis">
                 </div>
             </div>
-        </header>
-
-        <div class="content">
-            <section>
-                <h3>Professional Summary</h3>
-                <p class="summary">
-                    Top performing sales professional with 9+ years experience delivering outstanding customer service in the most competitive residential markets. Known for relentless prospecting, and confident closing abilities. Track record includes consistent quota attainment and leading high performance sales teams. Masters the art of turning conversations into contracts and building trust and rapport among customers. Consistently delivers results in high pressure, commission based environments and shows up with a winning mentality.
-                </p>
-            </section>
-
-            <section>
-                <h3>Professional Experience</h3>
-                
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title"><span class="company">Green Home Solutions</span> - Senior Solar Energy Consultant</div>
-                        </div>
-                        <div class="job-location">Grand Rapids, MI (2019-2025)</div>
-                    </div>
-                    <ul>
-                        <li>Conducted comprehensive in-home consultations for residential clients, designing custom systems with financial projections.</li>
-                        <li>Generated robust sales pipeline through door-to-door canvassing, referral networks, and inbound leads.</li>
-                        <li>Trained and mentored new sales representatives in consultative selling techniques, objection handling strategies, and presentation flow.</li>
-                        <li>Presented multiple financing options including loans, leases, and cash purchases to meet diverse budgets and payment preferences.</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title"><span class="company">GR Roofing & Exteriors</span> - Residential Roofing Sales Consultant</div>
-                        </div>
-                        <div class="job-location">Grand Rapids, MI (2017-2019)</div>
-                    </div>
-                    <ul>
-                        <li>Performed detailed roof inspections, storm damage assessments, and insurance claim documentation.</li>
-                        <li>Consistently closed roofing, siding, and gutter projects.</li>
-                        <li>Pioneered neighborhood canvassing strategies after storms, generating high quality leads.</li>
-                        <li>Coordinated closely with production crews to ensure seamless scheduling, material procurement, and installation timelines.</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <div>
-                            <div class="job-title"><span class="company">Cutco / Vector Marketing</span> - Branch Manager / Sales Representative</div>
-                        </div>
-                        <div class="job-location">Grand Rapids, MI (2015-2017)</div>
-                    </div>
-                    <ul>
-                        <li>Achieved top performer status at statewide fairs, expos, and trade shows.</li>
-                        <li>Earned fast track promotion based on superior appointment conversion rates and customer satisfaction scores.</li>
-                        <li>Launched and managed seasonal district office, recruiting and training 25-30 sales representatives.</li>
-                        <li>Facilitated weekly training sessions, managed payroll operations, led sales meetings, and coordinated territory planning.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section>
-                <h3>Skills</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">Consultative Selling</div>
-                    <div class="skill-item">Team Training & Management</div>
-                    <div class="skill-item">Lead Generation & Prospecting</div>
-                    <div class="skill-item">Self Motivated</div>
-                    <div class="skill-item">Pipeline Management</div>
-                    <div class="skill-item">Customer Relationship Building</div>
-                    <div class="skill-item">Industry Knowledge</div>
-                    <div class="skill-item">CRM & Sales Tools</div>
-                    <div class="skill-item">Contract & Negotiation</div>
-                </div>
-            </section>
-
-            <section>
-                <h3>References</h3>
-                <div class="references">
-                    <div class="reference-card">
-                        <div class="reference-name">Jake Doughtery</div>
-                        <div class="reference-title">Cutco District Manager</div>
-                        <div class="reference-phone">(614)-562-3074</div>
-                    </div>
-                    <div class="reference-card">
-                        <div class="reference-name">Dan Clifton</div>
-                        <div class="reference-title">GR Roofing Sales Manager</div>
-                        <div class="reference-phone">(616)-322-2553</div>
-                    </div>
-                </div>
-            </section>
         </div>
+    </section>
 
-        <footer>
-            <p>&copy; 2025 Connor Curtis. All rights reserved.</p>
-        </footer>
-    </div>
-</body>
-</html>
+    <section id="poker">
+        <div class="container">
+            <h2>The Poker Journey</h2>
+            <p class="section-subtitle">Running it up from $0.10/$0.20 to $500/$1000 at the Wynn</p>
+            <div class="poker-story">
+                <p>The definition of <span class="poker-highlight">running it up</span>. From zero.</p>
+                
+                <p>It started with $0.10/$0.20 games online. Small town Michigan casinos playing $1/$2, where competing at Bellagio's $5/$10 tables seemed like an impossible dream. But Connor didn't just dream—he executed.</p>
+                
+                <p>Through countless hours of grinding online, maintaining strict bankroll management, and staying disciplined through brutal downswings, Connor climbed the ranks. From micro-stakes to small stakes. From small stakes to mid-stakes. Each level conquered through skill, patience, and relentless improvement.</p>
+                
+                <p>By 2021, Connor had turned professional—consistently profitable and ready for the big leagues. The move to Las Vegas in late 2023 was the final piece. Soon after, he found himself at the <span class="poker-highlight">$10/$20 No-Limit Hold'em tables at the Wynn</span>, competing against some of the world's best players.</p>
+                
+                <p>Every day at noon sharp, the game would start. Battling elite players. Waiting for high-stakes whales to join. Managing six-figure swings with ice-cold composure. This was the dream realized—playing <span class="poker-highlight">$500/$500/$1000 at the Salon in the Wynn</span>, the highest public stakes game in Las Vegas.</p>
+            </div>
+
+            <div class="poker-stats">
+                <div class="stat-card">
+                    <div class="stat-number">$0.10</div>
+                    <div class="stat-label">Starting Stakes (2020)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">$500/$1k</div>
+                    <div class="stat-label">Peak Stakes at Wynn</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5 Years</div>
+                    <div class="stat-label">Professional Career</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">World Class</div>
+                    <div class="stat-label">Competition Level</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bridge">
+        <div class="container">
+            <h2>From Cards to Contracts</h2>
+            <p class="section-subtitle">How elite poker skills translate to sales mastery</p>
+            <div class="skills-bridge">
+                <div class="bridge-card">
+                    <h3>Reading People</h3>
+                    <p>Thousands of hours analyzing betting patterns, body language, and psychological tells. Now applied to understanding client needs, objections, and buying signals before they're spoken.</p>
+                </div>
+                <div class="bridge-card">
+                    <h3>Pressure Performance</h3>
+                    <p>Making six-figure decisions with incomplete information while maintaining composure. Sales calls and negotiations feel like second nature when you've battled the best in the world.</p>
+                </div>
+                <div class="bridge-card">
+                    <h3>Bankroll Management</h3>
+                    <p>Strict discipline managing downswings and variance translates directly to pipeline management, forecasting accuracy, and maintaining performance through tough quarters.</p>
+                </div>
+                <div class="bridge-card">
+                    <h3>Strategic Thinking</h3>
+                    <p>Multi-level game theory and long-term EV optimization. Every sales interaction is approached with the same strategic depth that dominated high-stakes tables.</p>
+                </div>
+                <div class="bridge-card">
+                    <h3>Competitive Drive</h3>
+                    <p>The relentless pursuit of improvement that took Connor from micro-stakes to the Wynn Salon fuels the same hunger to dominate in sales performance.</p>
+                </div>
+                <div class="bridge-card">
+                    <h3>Mental Fortitude</h3>
+                    <p>Battling variance, running bad, and crushing downswings built unshakeable resilience. Rejection in sales? Just another hand to play better.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sales">
+        <div class="container">
+            <h2>Sales Career</h2>
+            <p class="section-subtitle">9+ years of elite performance in competitive residential markets</p>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title"><span class="company">Green Home Solutions</span> - Senior Solar Energy Consultant</div>
+                    <div class="job-location">Grand Rapids, MI (2019-2025)</div>
+                </div>
+                <ul>
+                    <li>Conducted comprehensive in-home consultations for residential clients, designing custom solar systems with detailed financial projections</li>
+                    <li>Generated robust sales pipeline through door-to-door canvassing, referral networks, and inbound leads</li>
+                    <li>Trained and mentored new sales representatives in consultative selling techniques, objection handling strategies, and presentation flow</li>
+                    <li>Presented multiple financing options including loans, leases, and cash purchases to meet diverse budgets and payment pre
