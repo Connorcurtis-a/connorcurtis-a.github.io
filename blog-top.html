@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Happens at the Top | Connor Curtis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8fafc;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1e3a8a;
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+        }
+
+        nav a:hover {
+            color: #dc2626;
+        }
+
+        .blog-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 120px 20px 60px;
+            text-align: center;
+        }
+
+        .blog-hero h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .blog-post {
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
+        .post-meta {
+            color: #dc2626;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+        }
+
+        .post-title {
+            font-size: 2.5em;
+            color: #1e3a8a;
+            margin-bottom: 25px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .post-content {
+            font-size: 1.15em;
+            line-height: 1.9;
+            color: #374151;
+        }
+
+        .post-content p {
+            margin-bottom: 25px;
+        }
+
+        .post-content strong {
+            color: #1e3a8a;
+            font-weight: 600;
+        }
+
+        .post-content em {
+            color: #666;
+            font-style: italic;
+        }
+
+        .highlight {
+            background: #fef2f2;
+            border-left: 4px solid #dc2626;
+            padding: 20px 25px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+        .highlight p {
+            margin-bottom: 0;
+            font-style: italic;
+            color: #666;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: #1e3a8a;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-bottom: 30px;
+        }
+
+        .back-button:hover {
+            background: #dc2626;
+            transform: translateY(-2px);
+        }
+
+        .to-be-continued {
+            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+            border: 2px solid #1e3a8a;
+        }
+
+        .to-be-continued p {
+            color: #1e3a8a;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2em;
+            }
+
+            .blog-post {
+                padding: 30px 25px;
+            }
+
+            .post-title {
+                font-size: 1.8em;
+            }
+
+            nav ul {
+                gap: 20px;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#poker">POKER JOURNEY</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="blog-hero">
+        <h1>Reflections from the Top</h1>
+    </div>
+
+    <div class="container">
+        <a href="blog.html" class="back-button">← Back to Blog</a>
+
+        <article class="blog-post">
+            <div class="post-meta">DECEMBER 2024 • REFLECTIONS</div>
+            <h2 class="post-title">What Happens When You Reach the Top</h2>
+            
+            <div class="post-content">
+                <p>At the top of any field it's all glitz and glamour right? We all know that is the perception but once you involve yourself deeply in anything, most is all smoke and mirrors.</p>
+
+                <p>I had a dream when I started my journey. It was short sighted at first in hindsight. I knew I was gonna be an online battler and I made a guide for myself to jump stakes and be disciplined with my bankroll. I gave myself a strict guideline and rules to follow when it came to my bankroll and the games I would play. These rules were my gospel and I followed them faithfully.</p>
+
+                <p><strong>Once my bankroll was 20x the buy-in at the stake I wanted to jump, only then would I play those stakes. If my bankroll went down 60 percent of that, I would go down a stake level.</strong></p>
+
+                <p>I started from $0.10/$0.20—$20 max buy-in online—and I ran it up to playing $25/$50, $5,000 buy-in online. I soon felt ready to tackle the poker and gambling capital of the world: Las Vegas. I knew I would find myself alongside the best of the best, but I felt I was ready to shot take it.</p>
+
+                <p>The nearest casino from my home in Michigan that offered poker was nearly an hour away. The biggest game they would run is a special occasion $2/$5 game. I would find myself in my early days sitting in the chair at $1/$2. Once in awhile a player would come in and say they travelled to Vegas and played $5/$10 at Bellagio. I would roll my eyes at them as it seemed so distant and nearly impossible that some random guy from Michigan can just go to Vegas and sit down at a $5/$10 table.</p>
+
+                <div class="highlight">
+                    <p>"Fast forward and there is me, sitting down at the $5/$10 tables at Bellagio. Fast forward a bit more and there I am at the $20/$40 games at the Wynn, battling the best of the best."</p>
+                </div>
+
+                <p>The $20/$40 game was the highest stake public game in Las Vegas offered. I grinded that game for nearly 2 years before deciding to extend my tourist Vegas visa to a full time resident in December 2023.</p>
+
+                <p>I had big dreams. I wanted to run games, build lineups, network with elite players and recreational players coming to town wanting to get in on some action. The public games did have a huge flaw: fun players would rather soon shy away from public games and would play private games. There, where a lineup was controlled and executed, keeping out professionals that added no value to the game.</p>
+
+                <p>Professionals that weren't fun, couldn't do a simple gesture such as just adding an extra blind straddle when it was their turn when asked by a fun player to. They must've deemed it as not profitable equity for them to do so. Sigh. Well there you have it, the spirit of the game and excitement was ruined by these nitty professionals. People who took more from the game on a means of entitlement than what they would give back.</p>
+
+                <p>You don't need to give back the chips but you can give fun, some banter, some chit chat. Some of these pros just did not get that aspect of the game. I obviously knew I was a known professional and professionals do not get invited to private games without some ass kissing. I was not an ass kisser so I thought, if I couldn't join 'em, well then I'd start my own game.</p>
+
+                <p>I knew that I would be able to contribute fun and action, integrity and professionalism for the game. I knew the value that was needed and I knew I would create that. I started running my own private games $25/$50. I networked, I made a lot of connections.</p>
+
+                <p>I knew there were hindrances in running private games with how it worked in the casino and the allowance of them. But I did not wrap my head around the politics behind the scenes with other game runners. People who already ran games worked hard to build their connections with management and did not want to share their territory.</p>
+
+                <p>I found myself becoming disinterested in participating in this song and dance. I asked myself if this was truly what I wanted. If these were the people I would want to be working with and around. After a lot of time to self reflect I came to the conclusion that maybe that was not the way I would want to scale my poker career.</p>
+
+                <div class="to-be-continued">
+                    <p>✦ To be continued ✦</p>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Connor Curtis. All rights reserved.</p>
+    </footer>
+</body>
+</html>
