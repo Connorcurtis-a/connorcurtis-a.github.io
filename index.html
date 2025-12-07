@@ -53,7 +53,11 @@
         /* Hero Section */
         .hero {
             height: 100vh;
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(59, 130, 246, 0.85)), 
+                        url('https://github.com/Connorcurtis-a/connorcurtis-a.github.io/blob/main/headshot.jpg?raw=true');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: white;
             display: flex;
             align-items: center;
@@ -155,10 +159,8 @@
         }
 
         .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .about-text {
@@ -169,16 +171,6 @@
 
         .about-text p {
             margin-bottom: 20px;
-        }
-
-        .about-image {
-            text-align: center;
-        }
-
-        .about-image img {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
         }
 
         /* Poker Journey Section */
@@ -412,6 +404,10 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .hero {
+                background-attachment: scroll;
+            }
+
             .hero h1 {
                 font-size: 2.5em;
             }
@@ -422,10 +418,6 @@
 
             h2 {
                 font-size: 2em;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
             }
 
             nav ul {
@@ -471,12 +463,9 @@
             <p class="section-subtitle">A unique journey from zero to the top tables</p>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Connor Curtis, the man who can turn his dreams into reality. Gives his word and delivers. Turns his thoughts into action. His path to excellence was forged in the high-stakes world of professional poker before transitioning to elite sales performance.</p>
-                    <p>What sets Connor apart is his ability to under promise and over deliver, and execute strategy flawlessly when the stakes are highest. Whether at the poker table or in the boardroom, he delivers results.</p>
-                    <p>With 9+ years of combined experience in competitive environments, Connor brings aprecision, unique perspective on risk management, strategic thinking, and the mental fortitude required to consistently perform at the highest level.</p>
-                </div>
-                <div class="about-image">
-                    <img src="https://github.com/Connorcurtis-a/connorcurtis-a.github.io/blob/main/headshot.jpg?raw=true" alt="Connor Curtis">
+                    <p>Connor Curtis isn't your typical sales professional. His path to excellence was forged in the high-stakes world of professional poker before transitioning to elite sales performance.</p>
+                    <p>What sets Connor apart is his proven ability to thrive under pressure, read people with precision, and execute strategy flawlessly when the stakes are highest. Whether at the poker table or in the boardroom, he delivers results.</p>
+                    <p>With 9+ years of combined experience in competitive environments, Connor brings a unique perspective on risk management, strategic thinking, and the mental fortitude required to consistently perform at the highest level.</p>
                 </div>
             </div>
         </div>
@@ -489,13 +478,13 @@
             <div class="poker-story">
                 <p>The definition of <span class="poker-highlight">running it up</span>. From zero.</p>
                 
-                <p>It started with $0.10/$0.20 games online. Small town Michigan casinos playing $1/$2, where competing at Bellagio's $5/$10 tables seemed like an impossible dream. </p>
+                <p>It started with $0.10/$0.20 games online. Small town Michigan casinos playing $1/$2, where competing at Bellagio's $5/$10 tables seemed like an impossible dream. But Connor didn't just dream—he executed.</p>
                 
                 <p>Through countless hours of grinding online, maintaining strict bankroll management, and staying disciplined through brutal downswings, Connor climbed the ranks. From micro-stakes to small stakes. From small stakes to mid-stakes. Each level conquered through skill, patience, and relentless improvement.</p>
                 
-                <p>By 2021, Connor went pro; he was consistently profitable and ready for the big leagues. The move to Las Vegas in late 2023 was the final piece. Soon after, he found himself at the <span class="poker-highlight">$10/$20 No-Limit Hold'em tables at the Wynn</span>, competing against some of the world's best players.</p>
+                <p>By 2021, Connor had turned professional—consistently profitable and ready for the big leagues. The move to Las Vegas in late 2023 was the final piece. Soon after, he found himself at the <span class="poker-highlight">$10/$20 No-Limit Hold'em tables at the Wynn</span>, competing against some of the world's best players.</p>
                 
-                <p>Every day at noon sharp, the game would start. Battling elite players. Welcoming whales waiting to get in on the action. Managing six-figure swings. This was the dream realized. Playing <span class="poker-highlight">$10/$20 at the Wynn</span>, the highest stakes public game in Las Vegas. And somehow, finding himself a seat in the $500/$500/$1,000 game in the Salon, an event that he couldn't even dream up.</p>
+                <p>Every day at noon sharp, the game would start. Battling elite players. Waiting for high-stakes whales to join. Managing six-figure swings with ice-cold composure. This was the dream realized—playing <span class="poker-highlight">$500/$500/$1000 at the Salon in the Wynn</span>, the highest public stakes game in Las Vegas.</p>
             </div>
 
             <div class="poker-stats">
@@ -530,17 +519,17 @@
                     <h3 style="font-size: 2em; color: #1e3a8a; font-weight: 700; margin: 0;">Writing a Book</h3>
                 </div>
                 <p style="font-size: 1.15em; line-height: 2; color: #374151; margin-bottom: 20px;">
-                    Connor is currently in the early stages of writing a book about his poker journey. From grinding $0.10/$0.20 online in small-town Michigan to competing in the highest-stakes public games in Las Vegas.
+                    Connor is currently in the early stages of writing a book about his poker journey—from grinding $0.10/$0.20 online in small-town Michigan to competing in the highest-stakes public games in Las Vegas.
                 </p>
                 <p style="font-size: 1.15em; line-height: 2; color: #374151; margin-bottom: 20px;">
-                    The book will explore not just the technical aspects of climbing the poker ladder, but the mental fortitude required to manage brutal downswings, the discipline of bankroll management, and the psychological warfare of competing against the world's elite players.
+                    The book will explore not just the technical aspects of climbing the poker ladder, but the mental fortitude required to manage brutal downswings, the discipline of bankroll management, and the psychological warfare of competing against the world's elite players at the Wynn.
                 </p>
                 <p style="font-size: 1.15em; line-height: 2; color: #374151;">
-                    It is a testament to what's possible when you combine relentless work ethic, strategic thinking, and the courage to chase seemingly impossible dreams.
+                    More than a poker story, it's a testament to what's possible when you combine relentless work ethic, strategic thinking, and the courage to chase seemingly impossible dreams.
                 </p>
                 <div style="margin-top: 30px; padding-top: 25px; border-top: 2px solid rgba(30, 58, 138, 0.2);">
                     <p style="color: #1e3a8a; font-weight: 600; font-size: 1.05em; font-style: italic;">
-                        "From zero to the top, and risking it all. A journey worth telling."
+                        "From zero to the highest stakes—a journey worth telling."
                     </p>
                 </div>
             </div>
@@ -615,7 +604,7 @@
                     
                     <p>One of Connor's proudest achievements was managing a full regional tour for an artist client. Most tour managers work with rough estimates and hope things balance out. Connor took a different approach. He mapped every expense with obsessive precision—travel costs, lodging, food, gear, contingencies—projecting the total tour budget down to the dollar. When the tour wrapped, actual expenses matched his projections almost exactly. It was the kind of meticulous planning and execution that would later define his approach to bankroll management in poker and strategic thinking in every venture since.</p>
                     
-                    <p>Connor's time in the music industry was about solving real problems for people he genuinely cared about. He combined passion for the community with sharp business instincts, creating value for artists while building trust and a reputation throughout Western Michigan's music scene.</p>
+                    <p>Connor's time in the music industry wasn't just about business—it was about solving real problems for people he genuinely cared about. He combined passion for the community with sharp business instincts, creating value for artists while building trust and a reputation throughout Western Michigan's music scene.</p>
                 </div>
             </div>
 
