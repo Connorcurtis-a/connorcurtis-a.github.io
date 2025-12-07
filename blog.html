@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker Blog | Connor Curtis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8fafc;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1e3a8a;
+            font-weight: 600;
+            transition: color 0.3s;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+        }
+
+        nav a:hover {
+            color: #dc2626;
+        }
+
+        /* Hero */
+        .blog-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 120px 20px 60px;
+            text-align: center;
+        }
+
+        .blog-hero h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .blog-hero p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* Blog Post */
+        .blog-post {
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
+        .post-meta {
+            color: #dc2626;
+            font-weight: 600;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+        }
+
+        .post-title {
+            font-size: 2.5em;
+            color: #1e3a8a;
+            margin-bottom: 25px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .post-content {
+            font-size: 1.15em;
+            line-height: 1.9;
+            color: #374151;
+        }
+
+        .post-content p {
+            margin-bottom: 25px;
+        }
+
+        .post-content strong {
+            color: #1e3a8a;
+            font-weight: 600;
+        }
+
+        .highlight {
+            background: #fef2f2;
+            border-left: 4px solid #dc2626;
+            padding: 20px 25px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+        .highlight p {
+            margin-bottom: 0;
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: inline-block;
+            background: #1e3a8a;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-bottom: 30px;
+        }
+
+        .back-button:hover {
+            background: #dc2626;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2em;
+            }
+
+            .blog-post {
+                padding: 30px 25px;
+            }
+
+            .post-title {
+                font-size: 1.8em;
+            }
+
+            nav ul {
+                gap: 20px;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#poker">POKER JOURNEY</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="blog-hero">
+        <h1>The Poker Journey</h1>
+        <p>Stories from the tables and beyond</p>
+    </div>
+
+    <div class="container">
+        <a href="index.html" class="back-button">← Back to Home</a>
+
+        <article class="blog-post">
+            <div class="post-meta">DECEMBER 2024 • ORIGIN STORY</div>
+            <h2 class="post-title">How a Bookstore Discovery Changed Everything</h2>
+            
+            <div class="post-content">
+                <p>Be me. It's 2020 and I just launched a project working with Michigan musicians helping them book tours and sell out venues. After a year of grinding and barely skating by, I finally pick up some traction. I scheduled an around the country tour for an artist at multiple venues. I'm selling out shows for multiple artists around Grand Rapids, Michigan. Things are finally paying off and going great.</p>
+
+                <p>Then boom. Covid hits.</p>
+
+                <p>Venues start cancelling the shows that I booked and closing their doors. Artists stop touring. The unsettling discouragement feeling sets in and I feel sick. The summer of 2020, I found myself trying to work around covid restrictions and seeing what this new reality would look like. Turns out these venues would be closed for the long haul. No public gathering. People are fearful. People stick to themselves and small groups. The rest of the summer was pretty depressing rather.</p>
+
+                <p>One day, I am walking around the city and find myself in a book store. I'm on the phone with one of my good friends, pacing through the store. I happen to stumble upon this book on the bottom shelf in the corner of my eye.</p>
+
+                <p><strong>"The Theory of Poker" by David Sklansky.</strong></p>
+
+                <p>I didn't know it at the time but it was referred to as the "poker bible". A lightbulb went off in my head—maybe there is an advantage to be had in this game, if there is this much information out there that persuades people to write books about it.</p>
+
+                <div class="highlight">
+                    <p>"I planned on browsing the first few pages, but I got hooked. I ended up reading and finishing this 300+ page book in one night."</p>
+                </div>
+
+                <p>From there, I realized poker was a big complex math equation. With different ways to approach it and still end up with a "right" answer. A small flame of obsession ignited in my soul that night. Burning brighter each day.</p>
+
+                <p>I knew what had to be done. I was gonna master this game and from that point, put myself into a position to study, lock in and grind. It was destiny.</p>
+
+                <p>Every second of my time was spent consuming poker studies. I learned game theory by using AI software to identify and learn nash equilibrium—the optimal strategy to perform versus somebody else performing optimal strategy. This strategy is in theory, although impossible to perform exactly, unexploitable. Then I used statistical analysis to identify where my opponents were deviating from Nash equilibrium and began devising a mathematical strategy to exploit that.</p>
+
+                <p>I started my online journey with excitement and confidence, but always a student. The grind had begun.</p>
+
+                <p><em>More stories coming soon...</em></p>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Connor Curtis. All rights reserved.</p>
+    </footer>
+</body>
+</html>
